@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About the MediGuide knowledge-based medical assistance project.">
+    <title>About MediGuide</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app-container">
+    <aside class="sidebar" id="sidebar">
+        <div class="brand"><div class="logo">+</div><h2>MediGuide</h2></div>
+        <a class="new-chat nav-button" href="index.html">← Back to Assistant</a>
+        <nav class="side-nav" aria-label="Main navigation">
+            <a class="side-link" href="index.html"><span>▣</span> Chat Assistant</a>
+            <a class="side-link" href="health-tips.html"><span>✦</span> Health Tips</a>
+            <a class="side-link active" href="about.html" aria-current="page"><span>ⓘ</span> About MediGuide</a>
+        </nav>
+        <div class="sidebar-label">ABOUT</div>
+        <p class="sidebar-description">Learn about the purpose and responsible use of MediGuide.</p>
+        <div class="sidebar-bottom"><span class="status-dot"></span> System Interface</div>
+    </aside>
+    <main class="chat-area">
+        <header class="chat-header">
+            <button class="mobile-menu" type="button" onclick="document.getElementById('sidebar').classList.toggle('open')" aria-label="Open navigation">☰</button>
+            <div><h3>About MediGuide</h3><p>Knowledge-Based Medical Assistance</p></div>
+            <div class="online-status"><span class="status-dot"></span> Project Information</div>
+        </header>
+        <section class="info-page about-page">
+            <div class="info-heading">
+                <div class="welcome-icon">✚</div>
+                <p class="eyebrow">ABOUT THE PROJECT</p>
+                <h1>Making health information easier to explore.</h1>
+                <p>MediGuide is a knowledge-based medical assistance project intended to present educational information about symptoms, health conditions, and general wellness.</p>
+            </div>
+            <article class="about-card">
+                <h2>Our purpose</h2>
+                <p>MediGuide aims to help users explore general health information through an approachable interface. The project uses a structured knowledge base and rule-based reasoning as its intended foundation. The accuracy and scope of its responses depend on the knowledge and rules implemented in the system.</p>
+            </article>
+            <article class="disclaimer-card" id="disclaimer">
+                <div class="disclaimer-title"><span>!</span><div><p class="eyebrow">IMPORTANT INFORMATION</p><h2>Medical Disclaimer</h2></div></div>
+                <p>MediGuide is an educational information tool only. It is not a doctor, medical provider, diagnostic service, or emergency service. Information displayed may be incomplete and may not apply to your individual circumstances.</p>
+                <ul>
+                    <li>Do not use MediGuide as a substitute for consultation with a qualified healthcare professional.</li>
+                    <li>Do not start, stop, or change medication or treatment based only on information from this website.</li>
+                    <li>If symptoms are persistent, worsening, or concerning, contact a qualified healthcare professional.</li>
+                    <li>If you think you may be experiencing a medical emergency, contact local emergency services or go to the nearest emergency department immediately.</li>
+                </ul>
+                <p class="disclaimer-last">MediGuide does not provide a medical diagnosis or prescription.</p>
+            </article>
+        </section>
+        <footer class="page-disclaimer">MediGuide provides educational health information, not a medical diagnosis or prescription.</footer>
+    </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
