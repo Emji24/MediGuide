@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MediGuide knowledge-based medical information assistant.">
+    <title>MediGuide - Medical Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app-container">
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <div class="logo" aria-hidden="true">+</div>
+            <h2>MediGuide</h2>
+        </div>
+
+        <button class="new-chat" id="newChat" type="button">+ New Conversation</button>
+
+        <nav class="side-nav" aria-label="Main navigation">
+            <a class="side-link active" href="index.html" aria-current="page"><span>▣</span> Chat Assistant</a>
+            <a class="side-link" href="health-tips.html"><span>✦</span> Health Tips</a>
+            <a class="side-link" href="about.html"><span>ⓘ</span> About MediGuide</a>
+        </nav>
+
+        <div class="sidebar-label">ABOUT</div>
+        <p class="sidebar-description">Your knowledge-based medical information assistant.</p>
+
+        <div class="sidebar-bottom">
+            <span class="status-dot"></span>
+            System Interface
+        </div>
+    </aside>
+
+    <main class="chat-area">
+        <header class="chat-header">
+            <button class="mobile-menu" id="menuToggle" type="button" aria-label="Open navigation">☰</button>
+            <div>
+                <h3>MediGuide Assistant</h3>
+                <p>Knowledge-Based Medical Assistance</p>
+            </div>
+            <div class="online-status"><span class="status-dot"></span> Interface Preview</div>
+        </header>
+
+        <section class="messages" id="messages" aria-live="polite" aria-label="Conversation">
+            <div class="welcome" id="welcome">
+                <div class="welcome-icon">✚</div>
+                <h1>How can I help you today?</h1>
+                <p>Ask me about symptoms, common diseases, treatments, and general health information.</p>
+            </div>
+
+            <div class="message bot">
+                <div class="avatar">M</div>
+                <div class="message-content">
+                    Hello! Welcome to MediGuide. You can type your health-related questions here. How may I assist you?
+                </div>
+            </div>
+        </section>
+
+        <footer class="input-area">
+            <form class="input-wrapper" id="chatForm">
+                <textarea id="userInput" placeholder="Ask MediGuide anything..." rows="1" aria-label="Type your health question"></textarea>
+                <button id="sendBtn" type="submit" title="Send message" aria-label="Send message">➤</button>
+            </form>
+            <p class="disclaimer">MediGuide provides educational health information, not a medical diagnosis or prescription.</p>
+        </footer>
+    </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

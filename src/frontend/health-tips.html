@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="General health and wellness tips from MediGuide.">
+    <title>Health Tips - MediGuide</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app-container">
+    <aside class="sidebar" id="sidebar">
+        <div class="brand"><div class="logo">+</div><h2>MediGuide</h2></div>
+        <a class="new-chat nav-button" href="index.html">← Back to Assistant</a>
+        <nav class="side-nav" aria-label="Main navigation">
+            <a class="side-link" href="index.html"><span>▣</span> Chat Assistant</a>
+            <a class="side-link active" href="health-tips.html" aria-current="page"><span>✦</span> Health Tips</a>
+            <a class="side-link" href="about.html"><span>ⓘ</span> About MediGuide</a>
+        </nav>
+        <div class="sidebar-label">ABOUT</div>
+        <p class="sidebar-description">General wellness information for learning and awareness.</p>
+        <div class="sidebar-bottom"><span class="status-dot"></span> System Interface</div>
+    </aside>
+    <main class="chat-area">
+        <header class="chat-header">
+            <button class="mobile-menu" type="button" onclick="document.getElementById('sidebar').classList.toggle('open')" aria-label="Open navigation">☰</button>
+            <div><h3>Health Tips</h3><p>Everyday wellness and prevention</p></div>
+            <div class="online-status"><span class="status-dot"></span> Educational Content</div>
+        </header>
+        <section class="info-page">
+            <div class="info-heading">
+                <div class="welcome-icon">✦</div>
+                <p class="eyebrow">MEDIGUIDE WELLNESS</p>
+                <h1>Healthy habits, one step at a time.</h1>
+                <p>These are general wellness reminders. Choose habits that are suitable for your circumstances and follow advice from your healthcare professional.</p>
+            </div>
+            <div class="tip-grid">
+                <article class="tip-card"><span class="tip-number">01</span><h2>Stay hydrated</h2><p>Drink fluids regularly throughout the day. Your hydration needs may vary depending on your activity, environment, and health.</p></article>
+                <article class="tip-card"><span class="tip-number">02</span><h2>Stay active</h2><p>Choose safe physical activities that suit your abilities, such as walking, stretching, or other movement you enjoy.</p></article>
+                <article class="tip-card"><span class="tip-number">03</span><h2>Get enough rest</h2><p>Try to maintain a regular sleep schedule and create a relaxing routine before bedtime.</p></article>
+                <article class="tip-card"><span class="tip-number">04</span><h2>Eat balanced meals</h2><p>When possible, include a variety of foods and consider any dietary guidance given by your healthcare professional.</p></article>
+                <article class="tip-card"><span class="tip-number">05</span><h2>Care for your well-being</h2><p>Make time for rest, supportive relationships, and activities that help you manage everyday stress.</p></article>
+                <article class="tip-card"><span class="tip-number">06</span><h2>Attend regular checkups</h2><p>Ask a qualified healthcare professional which checkups, screenings, or vaccinations are appropriate for you.</p></article>
+            </div>
+            <div class="page-warning"><strong>Reminder:</strong> These tips are general educational information, not personalized medical advice or treatment instructions.</div>
+        </section>
+        <footer class="page-disclaimer">MediGuide provides educational health information, not a medical diagnosis or prescription.</footer>
+    </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
